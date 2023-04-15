@@ -4,6 +4,8 @@ sudo cp -rf app.conf /etc/nginx/sites-available/app
 
 chmod 710 /var/lib/jenkins/workspace/django-cicd
 
+rm app
+
 sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled
 
 sudo nginx -t
