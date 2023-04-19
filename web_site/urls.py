@@ -14,6 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
     3.initial push
     3.second commit to test git main brach protection rules
+    7.for got to add issues code
 """
 from django.contrib import admin
 from django.urls import path,include
