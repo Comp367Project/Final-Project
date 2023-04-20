@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import datetime
-
+#model files updated to trigger jenkins pipeline
 class Realtor(models.Model):
     name=models.CharField(max_length=200)
     photo=models.ImageField(upload_to='photos/%y/%m/%d')
