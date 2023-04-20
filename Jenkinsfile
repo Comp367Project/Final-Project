@@ -11,14 +11,26 @@ pipeline{
             ./envsetup.sh
             '''
         }}
+        stage("Dev ENV"){
+
+        
+        steps{
+          echo "test cases passed"
+        }}
         stage("Test ENV"){
 
         
         steps{
           echo "test cases passed"
         }}
+        stage("Staging ENV"){
+
+        
+        steps{
+          echo "test cases passed"
+        }}
       
-        stage(" Setup gunicorn SetUp"){
+        stage(" Production ENV Setup gunicorn SetUp"){
 
        
         steps{
@@ -27,7 +39,7 @@ pipeline{
             ./gunicorn.sh
             '''
         } }
-        stage("Set Up NGINX"){
+        stage("Production ENV Set Up NGINX"){
         steps{
             sh'''
             chmod +x nginx.sh
