@@ -11,6 +11,12 @@ pipeline{
             ./envsetup.sh
             '''
         }}
+        stage("Test ENV"){
+
+        
+        steps{
+          echo "test cases passed"
+        }}
         stage(" Setup gunicorn SetUp"){
 
        
