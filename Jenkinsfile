@@ -17,6 +17,15 @@ pipeline{
         steps{
           echo "test cases passed"
         }}
+        stage("Creating artifact"){
+
+        
+        steps{
+            git 'https://github.com/Comp367Project/Final-Project.git'
+            zip(zipFile: 'realestate.zip', dir: '/home/ubuntu/project')
+            archiveArtifacts artifacts: 'realestate.zip', onlyIfSuccessful: true
+          
+        }}
         stage(" Setup gunicorn SetUp"){
 
        
