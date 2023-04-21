@@ -15,7 +15,7 @@ pipeline{
 
         
         steps{
-          echo "test cases passed"
+          echo "Dev ENV"
         }}
         stage("Test ENV"){
 
@@ -27,7 +27,7 @@ pipeline{
 
         
         steps{
-          echo "test cases passed"
+          echo "Staging ENV"
         }}
       
         stage(" Production ENV Setup gunicorn SetUp"){
